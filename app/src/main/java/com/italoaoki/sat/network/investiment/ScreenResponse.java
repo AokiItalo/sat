@@ -1,6 +1,6 @@
 package com.italoaoki.sat.network.investiment;
 
-import com.italo.satandertest.investiment.model.RiskEnum;
+import com.italoaoki.sat.data.investimento.enumRisk;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class ScreenResponse {
     private String whatIs;
     private String definition;
     private String riskTitle;
-    private RiskEnum risk;
+    private enumRisk risk;
     private String infoTitle;
     private MoreInfoResponse moreInfo;
     private List<InfoResponse> info;
@@ -37,7 +37,7 @@ public class ScreenResponse {
         return riskTitle;
     }
 
-    public RiskEnum getRisk() {
+    public enumRisk getRisk() {
         return risk;
     }
 
