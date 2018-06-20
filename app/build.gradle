@@ -16,6 +16,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions 'dimensionDefault'
+    productFlavors {
+        dev {
+            applicationId = "com.italoaoki.sat.dev"
+            buildConfigField 'String', 'BASE_URL', '"https://floating-mountain-50292.herokuapp.com/"'
+        }
+    }
+
 
 }
 

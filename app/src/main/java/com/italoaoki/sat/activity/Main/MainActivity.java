@@ -17,10 +17,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.view_pager_home)
-    ViewPager mViewPagerHome;
-    @BindView(R.id.tab_home)
-    TabLayout mTabLayoutHome;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,15 +25,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            Window window = getWindow();
-            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-            window.setStatusBarColor(Color.TRANSPARENT);
-        }
-
-//        PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager(), this);
-//        mViewPagerHome.setAdapter(adapter);
-//        mTabLayoutHome.setupWithViewPager(mViewPagerHome);
-//        mViewPagerHome.setCurrentItem(PagerAdapter.TAB_CONTACT);
     }
 }
